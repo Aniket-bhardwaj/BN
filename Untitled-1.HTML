@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiye</title>
+    <style>
+        /* Base styles */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, #ffecd2, #ffcc80); /* Orange gradient background */
+            text-align: center;
+        }
+
+        .container {
+            max-width: 100%;
+            margin: 0 auto;
+            padding: 0;
+        }
+
+        .image {
+            display: block;
+            width: 100%; /* Full width */
+            margin: 0 auto;
+            max-width: 900px; /* Constrain to a maximum width */
+        }
+
+        .map-container {
+            margin: 0; /* No gaps between images and map */
+        }
+
+        .map-container iframe {
+            width: 100%; /* Full width for cross-device compatibility */
+            max-width: 900px; /* Maximum width for larger screens */
+            height: 300px; /* Standard height for the map */
+            border: none;
+        }
+
+        /* Responsive design for smaller screens */
+        @media (max-width: 768px) {
+            .image {
+                max-width: 100%; /* Allow images to resize on smaller devices */
+            }
+
+            .map-container iframe {
+                height: 250px; /* Adjust map height for smaller screens */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .map-container iframe {
+                height: 200px; /* Further adjust height for very small devices */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- First Image -->
+        <img src="3.png" alt="Event Image 1" class="image">
+
+        <!-- Second Image -->
+        <img src="4.png" alt="Event Image 2" class="image">
+
+        <!-- Third Image -->
+        <img src="5.png" alt="Event Image 3" class="image">
+
+        <!-- Map Section -->
+        <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3559.4598552351617!2d75.76182677543751!3d26.8571271766804!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396db5a63dad430b%3A0xde6a371d83ba0f93!2z4KSV4KSu4KWN4KSv4KWB4KSo4KS_4KSf4KWAIOCkuOClh-CkguCkn-CksCDgpLjgpL7gpK7gpYHgpKbgpL7gpK_gpL_gpJUg4KSV4KWH4KSC4KSm4KWN4KSwLCBzZWN0b3IgOA!5e0!3m2!1sen!2sin!4v1735205683683!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+</body>
+</html>
